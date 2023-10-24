@@ -12,6 +12,12 @@ function result() {
             icon: 'warning'
         })
     }
+    else if(price < 0 || quantity < 0) {
+        Swal.fire({
+            text: `I'm sorry, the values should be bigger than zero ☹️`,
+            icon: 'error'
+        })
+    }
     else{
         Swal.fire({
             text: `Hi ${name}, the result is: $${res}`,
