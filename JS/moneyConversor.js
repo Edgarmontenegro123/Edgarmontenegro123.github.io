@@ -9,8 +9,7 @@ function result() {
     let res = price * quantity;
 
     Swal.fire({
-        title: "Esta es una alerta",
-        text: `Hi ${name}, the result is: ${res}`,
-        icon: "info"
+        text: `Hi ${name}, the result is: $${res}`,
+        icon: "success"
     });
 }
