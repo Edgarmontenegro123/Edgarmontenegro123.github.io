@@ -5,7 +5,8 @@ function result() {
     let quantity = document.getElementById('quantity').value;
     let res = price * quantity;
     
-    // Reemplazo alert() por una librería llamada sweet alert 2.
+    // Replace alert() to sweet alert 2 library.
+    // Add validations too.
     if(!name || !price || !quantity) {
         Swal.fire({
             text: `Hey! We need you to complete all the fields!`,
